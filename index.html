@@ -234,7 +234,7 @@
       <td class="firsttwocolums">10:00</td><td class="firsttwocolums">10:25</td>
       <td id="m6"></td>
       <td id="t6"></td>
-      <td id="w6">Clubs</td>
+      <td id="w6"></td>
       <td id="th6"></td>
       <td id="f6"></td>
     </tr>
@@ -334,20 +334,20 @@
   var fb33 = ['t5','t6','th5','th6','f4','f5','f6'];
   var fb34 = ['t5','t6','th5','th6','m6','f5','f6'];
   //
-  var fb43 = ['m7','m8','m9','w7','w8','th8','th9'];
-  var fb44 = ['m7','m8','f7','w7','w8','th8','th9'];
+  var fb43 = ['m7','m8','m9','w6','w7','th8','th9'];
+  var fb44 = ['m7','m8','f7','w6','w7','th8','th9'];
   //
-  var fb53 = ['t7','t8','t9','w12','w13','f8','f9'];
-  var fb54 = ['th7','t8','t9','w12','w13','f8','f9'];
+  var fb53 = ['t7','t8','t9','w8','w9','f8','f9'];
+  var fb54 = ['th7','t8','t9','w8','w9','f8','f9'];
   //
   var fb63 = ['m12','m13','th12','th13','th14','f12','f13'];
-  var fb64 = ['m12','m13','th12','th13','w9','f12','f13'];
+  var fb64 = ['m12','m13','w12','th12','th13','f12','f13'];
   //
-  var fb73 = ['t12','t13','w14','w15','w16','f15','f16'];
-  var fb74 = ['t12','t13','m14','w15','w16','f15','f16'];
+  var fb73 = ['m14','t12','t13','w13','w14','f15','f16'];
+  var fb74 = ['m14','t12','t13','w13','w14','f15','f16'];
   //
   var fb83 = ['m15','m16','t14','t15','t16','th15','th16'];
-  var fb84 = ['m15','m16','f14','t15','t16','th15','th16'];
+  var fb84 = ['m15','m16','t15','t16','th15','th16','f14'];
 
   function color(e,f){
     document.getElementById(e).style.backgroundColor = f;
@@ -463,7 +463,7 @@
   function flight63(){
     for(i=0;i<fb63.length;i++){
       color(fb63[i],'#c1e28c');
-      color('w9','#D3D3D3')
+      color('w12','#D3D3D3')
     }
   }
   function flight64(){
@@ -484,13 +484,11 @@
   function flight73(){
     for(i=0;i<fb73.length;i++){
       color(fb73[i],'#ff9d00');
-      color('m14','#D3D3D3');
     }
   }
   function flight74(){
     for(i=0;i<fb74.length;i++){
       color(fb74[i],'#ff9d00');
-      color('w14','#D3D3D3');
     }
   }
   function flight7ilt(){
